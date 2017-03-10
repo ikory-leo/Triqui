@@ -10,6 +10,13 @@ package triqui;
  * @author Estudiantes
  */
 public class Gra extends javax.swing.JPanel {
+   char equis(){
+       char i; 
+       
+       i='X';
+       return i;
+        
+    }
 
     /**
      * Creates new form Gra
@@ -164,7 +171,8 @@ public class Gra extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void n1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_n1MouseClicked
-        boolean equals = this.n1.getText().equals(X);
+    this.n1.equals(equis());
+    n1.setVisible(true);
         // TODO add your handling code here:
     }//GEN-LAST:event_n1MouseClicked
 
@@ -174,7 +182,7 @@ public class Gra extends javax.swing.JPanel {
 
     private void XMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_XMouseClicked
         // TODO add your handling code here:
-        this.X.setEnabled(false);
+        
     }//GEN-LAST:event_XMouseClicked
 
 

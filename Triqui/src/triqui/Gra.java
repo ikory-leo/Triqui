@@ -43,6 +43,14 @@ public class Gra extends javax.swing.JPanel {
         setBackground(new java.awt.Color(240, 240, 0));
 
         X.setText("X");
+        X.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                XMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                XMouseEntered(evt);
+            }
+        });
 
         O.setText("O");
 
@@ -156,9 +164,18 @@ public class Gra extends javax.swing.JPanel {
     }// </editor-fold>//GEN-END:initComponents
 
     private void n1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_n1MouseClicked
-        n1 = String.valueOf(get);
+        boolean equals = this.n1.getText().equals(X);
         // TODO add your handling code here:
     }//GEN-LAST:event_n1MouseClicked
+
+    private void XMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_XMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_XMouseEntered
+
+    private void XMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_XMouseClicked
+        // TODO add your handling code here:
+        this.X.setEnabled(false);
+    }//GEN-LAST:event_XMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

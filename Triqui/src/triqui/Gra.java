@@ -18,11 +18,9 @@ public class Gra extends javax.swing.JPanel {
         
     }
 
-    /**
-     * Creates new form Gra
-     */
     public Gra() {
         initComponents();
+    this.X.setEnabled(false);
     }
 
     /**

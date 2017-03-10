@@ -13,7 +13,7 @@ public class Gra extends javax.swing.JPanel {
    char equis(){
        char i; 
        
-       i='X';
+       i = new javax.swing.JTextField(String.valueOf(X));
        return i;
         
     }
